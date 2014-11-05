@@ -24,11 +24,27 @@ class hardwareConfiguration(object):
 
     #name: (channelNumber, ismanual, manualstate,  manualinversion, autoinversion)
     channelDict = {
-                   '866DP':channelConfiguration(12, False, True, False, True),
-                   'crystallization':channelConfiguration(1, True, False, False, False),
-                   'bluePI':channelConfiguration(2, True, False, True, False),
-                   'camera':channelConfiguration(5, False, False, True, True),
-                   'coil_dir':channelConfiguration(6, False, False, True, True),
+                   'ch1':channelConfiguration(1, False, True, False, True),
+                   'ch2':channelConfiguration(2, False, True, False, True),
+                   'ch3':channelConfiguration(3, False, True, False, True),
+                   'ch4':channelConfiguration(4, False, True, False, True),
+                   'ch5':channelConfiguration(5, False, True, False, True),
+                   'ch6':channelConfiguration(6, False, True, False, True),
+                   'ch7':channelConfiguration(7, False, True, False, True),
+                   'ch8':channelConfiguration(8, False, True, False, True),
+                   'ch9':channelConfiguration(9, False, True, False, True),
+                   'ch10':channelConfiguration(10, False, True, False, True),
+                   'ch11':channelConfiguration(11, False, True, False, True),
+                   'ch12':channelConfiguration(12, False, True, False, True),
+                   'ch13':channelConfiguration(13, False, True, False, True),
+                   'ch14':channelConfiguration(14, False, True, False, True),
+                   'ch15':channelConfiguration(15, False, True, False, True),
+#                   'ch16':channelConfiguration(16, False, True, False, True),
+#                   '866DP':channelConfiguration(12, False, True, False, True),
+#                   'crystallization':channelConfiguration(1, True, False, False, False),
+#                   'bluePI':channelConfiguration(2, True, False, True, False),
+#                   'camera':channelConfiguration(5, False, False, True, True),
+#                   'coil_dir':channelConfiguration(6, False, False, True, True),
                    #------------INTERNAL CHANNEgiLS----------------------------------------#
                    'Internal866':channelConfiguration(0, False, False, False, False),
                    'DiffCountTrigger':channelConfiguration(16, False, False, False, False),
@@ -46,5 +62,4 @@ class hardwareConfiguration(object):
                 '854DP':ddsConfiguration(        3,  (70.0,90.0),    (-63.0,-4.0),   80.0,   -33.0),
                 '729DP':ddsConfiguration(        4,  (150.0,250.0),  (-63.0,-5.0),   220.0,  -33.0),
                 }
-    remoteChannels = {
-                    }
+    remoteChannels = {}
